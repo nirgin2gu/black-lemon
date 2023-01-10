@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+
+
+.navObjekt {
+   align-items: bottom;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.karussell {
+    
+    margin-top: 20px;
+    object-fit:cover;
+    width: 2000px;
+    height: 200px;
+    opacity: 50%;
+    display: flex;
+    
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ .karu {
+    display: flex;
+    height: 100%;
+} 
+
+.background {
+    background-color: yellowgreen;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.galerii {
+    margin-left:20px;
+    margin-top: 20px;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+   object-fit: cover;
+   /* transition: transform 0.2s ease-in-out 0.1s; */
+   
+ }  
+    
+
+.galerii:hover {
+    /* zoom:120%; */
+    transform: scale(1.2);
+    /* transition: transform 0.2s ease-in-out 0.2s; */
+    transition: transform .3s ease;
+} 
+    
+.nupp {
+    background-color: rgb(112, 112, 79);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+  .App {
+    height: 100%;
+    width: 100%;
+    background-color:black;
+    /* background-image: url('/public/taust2.JPG'); */
+    background-position: center;
+    background-size: cover;
+    min-height: 1200px;
+    
+    background-attachment: fixed;
+    
+}  
+
+/* .tagataust {
+    background-color: black;
+} */
+
+.map {
+    height: 500px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+    color: white;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
 }
